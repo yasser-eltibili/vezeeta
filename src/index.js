@@ -154,16 +154,28 @@ setTimeout(function replaceCallLink() {
   }
 }, 5000);
 
-//replace
-
-//tabs arrows up-down classes
-// let toggleButton = document.querySelector('.small-tab-container');
-// let toggle = document.querySelectorAll('.toggle');
-
-// function toggleCaret() {
-//   for (let i = 0; i < toggle.length; i++) {
-//     toggle[i].classList.toggle('fa-caret-down');
-//     toggle[i].classList.toggle('fa-caret-up');
-//   }
-// }
-// toggleButton.addEventListener('click', toggleCaret, false);
+// disable next and prev buttons
+let s1Prev = document.querySelector(
+  '#carouselExampleControls .carousel-control-prev'
+);
+let s1Next = document.querySelector(
+  '#carouselExampleControls .carousel-control-next'
+);
+let s2Prev = document.querySelector(
+  '#carouselExampleControls2 .carousel-control-prev'
+);
+let s2Next = document.querySelector(
+  '#carouselExampleControls2 .carousel-control-next'
+);
+function disableS1Buttons() {
+  s1Prev.classList.toggle('disabled');
+  s1Next.classList.toggle('disabled');
+}
+function disableS2Buttons() {
+  s2Prev.classList.toggle('disabled');
+  s2Next.classList.toggle('disabled');
+}
+s1Prev.addEventListener('click', disableS1Buttons, false);
+s1Next.addEventListener('click', disableS1Buttons, false);
+s2Prev.addEventListener('click', disableS2Buttons, false);
+s2Next.addEventListener('click', disableS2Buttons, false);
