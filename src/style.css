@@ -1,0 +1,990 @@
+/* General */
+
+body{
+    font-family: 'Source Sans Pro' !important;
+}
+
+h2 {
+    color: rgb(102, 102, 102);
+    margin-top: 0px;
+    font-size: 32px;
+    line-height: 28px;
+    width: 100%;
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+}
+/* /General */
+
+/* Header */
+.navbar{
+    background-color: rgb(0, 112, 205);
+    height: 59px;
+    padding: 14px 0px;
+    top: 0px;
+    width: 100%;
+    display: block;
+    clear: both;
+    position: relative;
+    z-index: 2;
+}
+
+
+.navbar .navbar-container{
+    width: 95%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.navbar .navbar-logo{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    padding: 0px;
+}
+
+
+.navbar .navbar-links{
+    display: inline-block;
+    vertical-align: top;
+    width: 69%;
+    padding: 0px;
+    text-align: right;
+    line-height: 31px;
+    direction: ltr;
+}
+
+img.slider-background {
+    z-index: -1;
+    object-position: center top;
+    object-fit: cover;
+    width: 100%;
+    height: 685px;
+    position: absolute;
+}
+
+.dropdowns{
+    width: calc(100% - 195px);
+    display: flex;
+}
+
+img.slider-background {
+    width: 100%;
+}
+
+.slider {
+    height: 685px;
+    display: block;
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0px, rgba(255, 255, 255, 0.01) 38%, transparent 100%);
+}
+
+.slider-text {
+    padding-top: 55px;
+    width: 100%;
+    line-height: 1;
+    color: rgb(111, 112, 114);
+    display: inline-block;
+    animation: 0s ease 0s 1 normal none running none;
+}
+
+.slider-arrow{
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 85px;
+    cursor: pointer;
+    border-right: 7px solid rgb(255, 255, 255);
+    border-bottom: 7px solid rgb(255, 255, 255);
+    transform: rotate(45deg);
+}
+
+.navbar-links * {
+    color: #fff;
+    text-decoration: none;
+}
+
+button.signup {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    vertical-align: middle;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 0px 6px;
+    margin-right: 8px;
+    line-height: 24px;
+    transition: all 0.2s ease-in 0s;
+    font-weight: 400 !important;
+    background: #0070cd;
+}
+
+.navbar-links a {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    vertical-align: middle;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0.5px 2px 0px;
+    font-weight: 400 !important;
+}
+
+span.navlink-separator:before {
+    content: "|";
+    margin: 0px 5.5px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    line-height: inherit;
+}
+
+.slider-search-tabs{
+    margin-top: 180px;
+}
+
+.slider-search-tabs-container {
+    background: white;
+    border-radius: 22px;
+    box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.search-heading {
+    width: calc(50% - 1.69px);
+    display: inline-block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: white;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px 0px 18px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    cursor: pointer;
+}
+
+.large-tabs-container {
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+}
+
+.search-heading.active {
+    border-bottom: 3px solid rgb(0, 112, 205); 
+}
+
+.styled-button {
+    max-height: 68px;
+    height: 66px;
+    position: relative;
+    display: flex;
+    direction: ltr;
+    cursor: pointer;
+    border: 0px;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 130px;
+    color: rgb(255, 255, 255);
+    background: rgb(239, 15, 15);
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: rgb(239 15 15) 0px 0px 0px 1px;
+    width: 195px;
+    margin: 0px -1px 0px 0px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.collected-tabs {
+    width: 100%;
+    display: flex;
+}
+
+.tab-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(112, 117, 117);
+    text-align: left;
+    line-height: 20px;
+}
+
+.active .tab-title {
+    color: rgb(0, 112, 205);
+}
+
+.tab-description {
+    font-size: 14px;
+    color: rgb(112, 117, 117);
+}
+
+.active .tab-description {
+    color: rgb(0, 112, 205);
+}
+
+.small-tab-container {
+    transition: background-color 0.5s ease 0s;
+    background-color: white;
+    color: #fff;
+    margin: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+    width: 100%;
+    direction: ltr;
+    border-radius: 10px 0px 0px 10px;
+    height: 66px;
+    padding: 6px 16px 4px;
+    position: relative;
+}
+
+.searching input {
+    border: unset;
+}
+
+.searching input::placeholder {
+    color: rgb(0, 112, 205);
+    opacity: 1; /* Firefox */
+  }
+  
+  .searching input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(0, 112, 205);
+  }
+  
+  .searching input::-ms-input-placeholder { /* Microsoft Edge */
+   color: rgb(0, 112, 205);
+  }
+
+  .collected-tabs .dropdown-menu a {
+    display: inline-block;
+    width: 50%;
+    font-size: 17px;
+    color: rgb(0, 112, 205);
+    padding: 5.8px 6px;
+    position: sticky;
+    z-index: 3;
+}
+
+i.fa-solid.fa-phone {
+    color: rgb(239, 15, 15);
+    font-size: 16.5px;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.tab-details-container > div {
+    max-height: 68px;
+    height: 66px;
+    width: 100%;
+    padding: 0px 1px 0.5px !important;
+    border-radius: 11px;
+    border: 1px solid rgb(196, 196, 196);
+    display: flex;
+    direction: ltr;
+    margin: auto;
+    box-sizing: content-box;
+}
+
+.call .tab-details-container > div {
+    max-height: 68px;
+    height: 66px;
+    width: 50%;
+    padding: 0px 1px 0.5px !important;
+    border-radius: 11px;
+    border: 1px solid rgb(196, 196, 196);
+    display: flex;
+    direction: ltr;
+    margin: auto;
+    box-sizing: content-box;
+}
+
+
+
+.tab-details {
+    display: none;
+}
+
+.tab-details.active {
+    display: block;
+}
+
+.tab-details-container {
+    padding: 12px;
+}
+
+.small-tab {
+    direction: rtl;
+    cursor: pointer;
+    border-width: 0px 1px 0px 0px;
+    border-top-style: initial;
+    border-bottom-style: initial;
+    border-top-color: initial;
+    border-bottom-color: initial;
+    border-image: initial;
+    border-right-style: solid;
+    border-right-color: rgb(196, 196, 196);
+    border-left-style: initial;
+    border-left-color: initial;
+    position: unset;
+    flex: 1;
+}
+
+
+.small-tab-small-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: list-item;
+    font-size: 12px;
+    color: rgb(116, 116, 112);
+    line-height: 20px;
+    text-align: left;
+    max-width: calc(100% - 20px);
+}
+
+.small-tab-selector {
+    text-align: left;
+    display: list-item;
+    color: rgb(0, 112, 205);
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: unset;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.slider-text-container h1 {
+    line-height: 1.1;
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0px 0px 11px;
+}
+
+.slider-text-container h2 {
+    font-weight: normal;
+    margin: 0px;
+    font-size: 25px;
+}
+
+.beside-icon {
+    display: inline-block;
+}
+
+.styled-button i {
+    margin: 0px 10px 0px 0px;
+    font-size: 30px;
+    transform: rotate(90deg);
+}
+
+.large-tab i {
+    font-size: 30px;
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+}
+
+.active .large-tab i {
+    color: rgb(0, 112, 205);
+}
+
+.collected-tabs .dropdown-menu a {
+    display: inline-block;
+    width: 50%;
+}
+
+.collected-tabs .dropdown-menu {
+    max-width: 620px;
+    min-width: 120px;
+    padding: 10px 40px 30px;
+}
+
+.small-tab-selector i:first-of-type {
+    margin-left: unset;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.small-tab-selector i:last-of-type {
+    color: rgba(116, 116, 112, 0.58);
+    font-size: 20px;
+    padding: 22px 10px;
+    position: absolute;
+    left: unset;
+    right: 6px;
+    top: -4px;
+    z-index: 1;
+    text-align: center;
+}
+
+/* /Header */
+
+/* Content */
+
+
+.odd-block{
+    background: rgb(238, 240, 242);
+    padding: 56px 0px;
+}
+
+.even-block {
+    background: #fff;
+}
+
+.pharmacy-box{
+    text-decoration: none;
+    background-size: cover;
+    background-position: 100% 0%;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: white;
+    background-image: url('./assets/images/pharmacy.jpg');
+    height: 122px;
+    padding: 35px 40px;
+    margin-bottom: 30px;
+    box-sizing: content-box;
+}
+
+.icon-side-box img {
+    width: 176px;
+    height: 176px;
+    vertical-align: top;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.side-box {
+    display: inline-block;
+    width: calc(100% - 181px);
+    background: #fff;
+    height: 176px;
+    padding: 30px 24px 41px;
+    margin-left: -2px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.custom-button {
+    text-decoration: none;
+    background-position: 100% 0%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: fit-content;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 10px 24px;
+    color: rgb(0, 112, 205);
+    font-weight: 600;
+}
+
+.application{
+    background-color: rgb(0, 112, 205);
+    color: white;
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.odd-block:first-of-type h2 {
+    margin-bottom: 26px;
+    padding: 0 6px;
+}
+
+.pharmacy-text-container > div {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+    .content-slider .carousel-control-prev-icon, .content-slider .carousel-control-next-icon  {
+        background-image: unset;
+        font-size: 16px;
+        color: rgb(102, 102, 102);
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-slider .carousel-control-prev, .carousel-control-next {
+        justify-content: center;
+        text-align: center;
+        opacity: 1;
+        width: 38px;
+        height: 38px;
+        z-index: 2;
+        border-radius: 4px;
+        background-color: white;
+        cursor: default;
+        border: 1px solid rgb(217, 217, 218);
+        padding: 0;
+        align-items: center;
+        top: calc(50% - 19px);
+}
+
+.content-slider .carousel-inner {
+    padding: 0 50px;
+}
+
+.s1 .pic-holder img {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.s2 .pic-holder img {
+    width: 100%;
+    height: 217.2px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.pic-holder {
+    overflow: hidden;
+}
+
+.application-container > div {
+    display: inline-block;
+}
+
+.application-container {
+    width: 650px;
+    margin: auto;
+    display: flex;
+}
+
+.application-text {
+    margin: 96px 0px 0px;
+}
+
+.mobile-img {
+    margin-right: 60px;
+    margin-top: 56px;
+}
+
+.custom-title span, .custom-title {
+    font-weight: 700;
+    display: block;
+    color: rgb(102, 102, 102);
+    font-size: 22px;
+    margin-bottom: 4px;
+    line-height: 30px;
+}
+
+.icon-side-box-content {
+    height: 48px;
+    margin-bottom: 13px;
+    -webkit-line-clamp: 2;
+    font-size: 16px;
+}
+
+.custom-link {
+    color: rgb(0, 112, 205);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: bottom;
+    margin-bottom: 4px;
+}
+
+.pic-holder {
+    position: relative;
+}
+
+.pic-text-title h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: white;
+    font-size: 16px;
+    margin: 0px;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pic-text-price span:first-of-type {
+    color: rgb(185, 185, 185);
+    font-size: 16px;
+    margin-right: 5px;
+    text-decoration: line-through;
+}
+
+.pic-text-price span:last-of-type {
+    font-size: 16px;
+    color: rgb(0, 112, 205);
+}
+
+.pic-text-content {
+    font-size: 14px;
+    text-align: start;
+    margin: 0px;
+    color: rgb(111, 112, 114);
+}
+
+
+.s1 .pic-holder span {
+    position: absolute;
+    top: 10px;
+    border-width: 0px 0px 0px 5px;
+    left: 10px;
+    padding: 2px 5px 2px 3px;
+    z-index: 2;
+    height: fit-content;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(224, 32, 32);
+    border-color: rgb(174, 13, 13);
+    border-style: solid;
+}
+
+.s2 .pic-holder > div {
+    padding: 13px 16px 11px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    background-color: white;
+    margin: -4px 0px 0px;
+    color: rgb(102, 102, 102);
+    border-radius: 0px 0px 8px 8px;
+    font-weight: bold;
+}
+
+.icon-boxes {
+    padding: 56px 0px;
+}
+
+.icon-boxes img {
+    width: 32px;
+    display: block;
+    margin-bottom: 18px;
+}
+
+.icon-boxes span:first-of-type {
+    height: 60px;
+    margin-bottom: 8px;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    display: block;
+}
+
+.icons-boxes-span{
+    display: block;
+    font-size: 14px;
+    color: rgb(111, 112, 114);
+    line-height: 24px;
+}
+
+.mb-title {
+    margin-bottom: 16px;
+}
+
+.awareness-topic > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.awareness-img {
+    margin: 0px 20px 0px 0px;
+}
+
+.awareness-topic {
+    padding: 40px 0px;
+    border-bottom: 1px solid rgb(217, 217, 218);
+    position: relative;
+}
+
+.content-slider.s1 {
+    padding: 56px 0px 15px;
+}
+
+.awareness-content span {
+    display: block;
+    font-size: 14px;
+    color: rgb(111, 112, 114);
+    line-height: 24px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+a.tag {
+    color: rgb(111, 112, 114);
+    line-height: 24px;
+    background: white;
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 5px 8px 5px 0px;
+    font-size: 14px !important;
+}
+
+.mobile-img img {
+    height: 283px;
+    width: 183px;
+}
+
+.awareness-text {
+    max-width: calc(100% - 120px);
+}
+
+a.awareness-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 0px;
+}
+
+.awareness-arrow img {
+    width: 32px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.application a {
+    padding: 12px 30px;
+    display: inline-block;
+    border: none;
+    direction: ltr;
+    border-radius: 6px;
+    margin-right: 8px;
+    background-color: white;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+}
+
+a.custom-anchor img {
+    margin-right: 7px;
+}
+
+.offers {
+    color: rgb(0, 112, 205);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.s1 h2 {
+    width: unset;
+}
+
+.s1 .title-container {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    direction: ltr;
+    width: calc(100% - 30px) !important;
+}
+
+.application-text h1 {
+    font-size: 32px;
+    margin: 0px 0px 8px;
+    font-weight: bold;
+}
+
+.pharmacy-text-container > div:first-of-type {
+    font-weight: bold;
+}
+
+.side-box .custom-link {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tops span {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.red-arrow i {
+    margin: 5px;
+    color: rgb(239, 15, 15);
+}
+
+/* /Content */ 
+
+/* Footer */
+
+footer{
+    display: block;
+    background: rgb(0, 112, 205);
+    padding: 30px 0px 20px;
+    min-height: 200px;
+    margin-top: auto;
+    align-self: flex-start;
+    text-align: left;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    cursor: pointer;
+    line-height: 31px;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+footer .widget-1 img {
+    margin-bottom: 10px;
+}
+
+.widgets {
+    display: flex;
+}
+
+.widget {
+    flex: 1;
+}
+
+.social-media i {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 25px;
+    margin: 0px 10px;
+}
+
+.social-media {
+    padding: 0px 2rem;
+}
+/* /Footer */
+
+/* Responsive */
+
+@media screen and (max-width: 991px) {
+    .slider-text-container h1 {
+        font-size: 27px;
+    }
+    .slider-text-container h2 {
+        font-weight: normal;
+        margin: 0px;
+        font-size: 18px;
+    }
+    .slider-content {
+        width: 95%;
+        max-width: unset;
+    }
+    .slider-search-tabs {
+        margin-top: 70px;
+    }
+    .slider-arrow {
+        margin-top: 35px;
+    }
+    .slider {
+        height: 685px;
+        display: block;
+        background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0px, rgba(255, 255, 255, 0.01) 38%, transparent 100%);
+        height: 485px;
+    }
+    .small-tab-selector {
+        font-size: 12px;
+    }
+    .small-tab-small-text {
+        font-size: 11px;
+    }
+    .small-tab-selector i:first-of-type {
+        margin-left: unset;
+        margin-right: 5px;
+        font-size: 22px;
+    }
+    .odd-block {
+        padding: 30px 0px;
+    }
+    .odd-block:first-of-type h2 {
+        font-size: 26px;
+    }
+    .pharmacy-box .custom-button {
+        width: 224px;
+    }
+    .pharmacy-text-container > div:last-of-type {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+    .container {
+        width: calc(100% - 30px) !important;
+        max-width: unset;
+    }
+    .icon-boxes span:first-of-type {
+        height: unset;
+        line-height: 10px;
+        font-size: 20px;
+        display: inline-block;
+    } 
+    .icon-boxes img {
+        width: 35px;
+        display: inline-block;
+        padding: 0px 15px 0px 0px;
+        box-sizing: content-box;
+        margin-bottom: 0;
+    }  
+    span.icon-boxes-span {
+        display: block;
+        padding: 0 0 0 55px;
+        margin-top: -10px;
+    }
+    .app.container {
+        width: 100% !important;
+        padding: 0;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    .widget.widget-5 img {
+        height: 28px;
+    }
+    .social-media i {
+        font-size: 18px;
+    }
+          
+}
+
+/* /Responsive */

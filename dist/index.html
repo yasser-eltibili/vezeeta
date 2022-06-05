@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/images/v.ico">
+    <link href="/fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <title>Vezeeta</title>
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="header">
+        <div class="navbar">
+          <div class="navbar-container">
+            <div class="navbar-logo">
+              <a href="#">
+                <img src="/images/logo.jfif"/>
+              </a>
+            </div>
+            <div class="navbar-links">
+              <button class="signup">Sign Up</button>
+              <a href="#">Login</a>
+              <span class="navlink-separator"></span>
+              <a href="#">Vezeeta For Doctors</a>
+              <span class="navlink-separator"></span>
+              <a href="#">Contact Us</a>
+              <span class="navlink-separator"></span>
+              <a href="#">عربي</a>
+              <span class="navlink-separator"></span>
+              <a href="#">Egypt</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider-container">
+            <div class="slider-backgrounds">
+              <img class="slider-background" src="/images/slider1.jpg">
+              <img class="slider-background" src="/images/slider2.jpg">
+              <img class="slider-background" src="/images/slider3.jpg">
+              <img class="slider-background" src="/images/slider4.jpg">
+            </div>
+            <div class="slider-content container">
+              <div class="slider-text">
+                <div class="slider-text-container">
+                  <h1>Better Healthcare for a Better Life</h1>
+                  <h2>Book online or call <i class="fa-solid fa-phone"></i> 16676</h2>
+                </div>
+              </div>
+              <div class="slider-search">
+                <div class="slider-search-container">
+                  <div class="slider-search-tabs">
+                    <div class="slider-search-tabs-container">
+                      <div class="large-tabs-container">
+                        <div id="doctor-button" class="search-heading active">
+                          <div class="large-tab">
+                            <i class="fa-solid fa-calendar"></i>
+                            <div class="beside-icon">
+                              <div class="tab-title">Book a doctor</div>
+                            <div class="tab-description">Examination or procedure</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div  id="call-button" class="search-heading">
+                          <div class="large-tab">
+                            <i class="fa-solid fa-headphones"></i>
+                            <div class="beside-icon">
+                              <div class="tab-title">Telehealth</div>
+                            <div class="tab-description">Call consultation with doctor</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="doctor-tab" class="tab-details doctor active">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="tab-details-container">
+                              <div>
+                                <div class="collected-tabs">
+                                  <div class="dropdowns">
+                                    <div class="small-tab dropdown">
+                                      <button class="small-tab-container dropdown-toggle" type="button" id="specialisty" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="small-tab-small-text">Select a specialisty</span>
+                                        <span class="small-tab-selector"><i class="fa-solid fa-stethoscope"></i><span id="choose-specialisty"> Choose specialisty </span><i class="fa-solid fa-caret-down toggle"></i></span>
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="specialisty" id="specialisity-menu">
+                                        
+                                      </div>
+                                    </div>
+                                    <div class="small-tab dropdown">
+                                      <button class="small-tab-container dropdown-toggle" type="button" id="city" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="small-tab-small-text">In this city</span>
+                                        <span class="small-tab-selector"><i class="fa-solid fa-location-dot"></i><span id="choose-city">Choose city</span><i class="fa-solid fa-caret-down toggle"></i></span>
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="city" id="city-menu">
+                                        
+                                      </div>
+                                    </div>
+                                    <div class="small-tab dropdown">
+                                      <button class="small-tab-container dropdown-toggle" type="button" id="area" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="small-tab-small-text">In this area</span>
+                                        <span class="small-tab-selector"><i class="fa-solid fa-location-dot"></i><span id="choose-area">Choose area</span><i class="fa-solid fa-caret-down toggle"></i></span>
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="area" id="area-menu">
+                                        
+                                      </div>
+                                    </div>
+                                    <div class="small-tab">
+                                      <div class="small-tab-container">
+                                        <span class="small-tab-small-text">Or search by name</span>
+                                        <span class="small-tab-selector searching">
+                                          <i class="fa-solid fa-user-doctor"></i>
+                                          <input type="text" placeholder="Doctor name or hospital name" id="name-search-input">
+                                          <i></i>
+                                        </span>
+                                      </div>
+                                      <div class="dropdown-menu" aria-labelledby="name" id="name-search">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="styled-button-container">
+                                    <button class="styled-button" id="name-search-button">
+                                      <i class="fa-brands fa-searchengin"></i>
+                                      <span>Search</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="call-tab" class="tab-details call">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="tab-details-container">
+                              <div>
+                                <div class="collected-tabs">
+                                  <div class="dropdowns">
+                                    <div class="small-tab dropdown">
+                                      <button class="small-tab-container dropdown-toggle" type="button" id="call-specialisty" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="small-tab-small-text">Select a specialisty</span>
+                                        <span class="small-tab-selector"><i class="fa-solid fa-stethoscope"></i><span id="choose-call"> Choose specialisty</span><i class="fa-solid fa-caret-down toggle"></i></span>
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="specialisty" id="call-menu">
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="styled-button-container">
+                                    <div class="styled-button">
+                                      <i class="fa-brands fa-searchengin"></i>
+                                      <span>Search</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-search-tabs-content">
+                   
+                  </div>
+                </div>
+              </div>
+              <div id="slider-arrow" class="slider-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-container">
+          <div class="odd-block">
+            <div class="container">
+              <h2>New services for better healthcare</h2>
+              <div class="pharmacy-box">
+                <div class="pharmacy-text">
+                  <div class="pharmacy-text-container">
+                    <div>Pharmacy</div>
+                    <div>Get your medicine and all your pharmacy needs.</div>
+                  </div>
+                </div>
+                <div class="custom-button">
+                  Place order
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="icon-side-box">
+                    <img src="/images/side1.jfif" alt="video call image">
+                    <div class="side-box">
+                      <div class="custom-title">Teleconsultation</div>
+                      <div class="icon-side-box-content">Schedule a voice or video call with a specialized doctor.</div>
+                      <div class="custom-link red-arrow">
+                        Book a Call
+                        <i class="fa-solid fa-caret-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="icon-side-box">
+                    <img src="/images/side2.jfif" alt="home visit image">
+                    <div class="side-box">
+                      <div class="custom-title">Home Visit</div>
+                      <div class="icon-side-box-content">Choose the specialty, and the doctor will visit you at home.</div>
+                      <div class="custom-link red-arrow">
+                        Book a visit
+                        <i class="fa-solid fa-caret-right"></i>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="even-block">
+            <div class="container">
+              <div class="awareness-topic">
+               <div class="awareness-img">
+                 <img src="/images/healthlogo.jfif" alt="minster of health logo">
+               </div>
+               <div class="awareness-text">
+                 <div class="awareness-title custom-title">
+                  <span>Corona Symptoms?</span>
+                 </div>
+                 <div class="awareness-content">
+                  <span>You can ask and consult an internist about corona symptoms through a free call, sponsored by the Ministry of Health and Population, from 8 am to 12 am.</span>
+                 </div>
+               </div>
+               <a href="" class="awareness-arrow">
+                <img src="/images/next-arrow.svg" alt="">
+              </a>
+              </div>
+              <div class="content-slider s1">
+                <div class="content-slider-container">
+                  <div class="title-container">
+                    <h2 class="mb-title">Choose from top offers</h2>
+                  <a class="offers red-arrow" href="#">All Offers
+                    <i class="fa-solid fa-caret-right"></i>
+                  </a>
+                  </div>
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c1i1.jfif" alt="">
+                              <span>70%</span>
+                            </div>
+                            <div class="pic-text">
+                              <div class="pic-text-title"><h3>Teeth Cleaning</h3></div>
+                              <div class="pic-text-price">
+                                <span>500 EGP</span>
+                                <span>150 EGP</span>
+                              </div>
+                              <div class="pic-text-content">236 offers</div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c1i2.jfif" alt="">
+                              <span>50%</span>
+                            </div>
+                            <div class="pic-text">
+                              <div class="pic-text-title"><h3>Facial Cleansing</h3></div>
+                              <div class="pic-text-price">
+                                <span>500 EGP</span>
+                                <span>250 EGP</span>
+                              </div>
+                              <div class="pic-text-content">122 offers</div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c1i3.jfif" alt="">
+                              <span>25%</span>
+                            </div>
+                            <div class="pic-text">
+                              <div class="pic-text-title"><h3>Metal Bracing</h3></div>
+                              <div class="pic-text-price">
+                                <span>10000 EGP</span>
+                                <span>7500 EGP</span>
+                              </div>
+                              <div class="pic-text-content">7 offers</div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c1i4.jfif" alt="">
+                              <span>50%</span>
+                            </div>
+                            <div class="pic-text">
+                              <div class="pic-text-title"><h3>Face Peeling</h3></div>
+                              <div class="pic-text-price">
+                                <span>400 EGP</span>
+                                <span>200 EGP</span>
+                              </div>
+                              <div class="pic-text-content">13 offers</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item s1">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c1i5.jfif" alt="">
+                              <span>84%</span>
+                            </div>
+                            <div class="pic-text">
+                              <div class="pic-text-title"><h3>Vitamin D</h3></div>
+                              <div class="pic-text-price">
+                                <span>938 EGP</span>
+                                <span>150 EGP</span>
+                              </div>
+                              <div class="pic-text-content">3 offers</div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c1i6.jfif" alt="">
+                              <span>57%</span>
+                            </div>
+                            <div class="pic-text">
+                              <div class="pic-text-title"><h3>Laser Hair Removal</h3></div>
+                              <div class="pic-text-price">
+                                <span>350 EGP</span>
+                                <span>150 EGP</span>
+                              </div>
+                              <div class="pic-text-content">82 offers</div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c1i7.jfif" alt="">
+                              <span>50%</span>
+                            </div>
+                            <div class="pic-text">
+                              <div class="pic-text-title"><h3>Weight Loss</h3></div>
+                              <div class="pic-text-price">
+                                <span>800 EGP</span>
+                                <span>400 EGP</span>
+                              </div>
+                              <div class="pic-text-content">37 offers</div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c1i8.jfif" alt="">
+                              <span>50%</span>
+                            </div>
+                            <div class="pic-text">
+                              <div class="pic-text-title"><h3>Vision Correction</h3></div>
+                              <div class="pic-text-price">
+                                <span>1500 EGP</span>
+                                <span>750 EGP</span>
+                              </div>
+                              <div class="pic-text-content">26 offers</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="odd-block">
+            <div class="container">
+              <div class="content-slider s2">
+                <div class="content-slider-container">
+                  <h2 class="mb-title">Book from top specialties</h2>
+                  <div id="carouselExampleControls2" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c2i1.jfif" alt="">
+                              <div><span>Skin</span></div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c2i2.jfif" alt="">
+                              <div><span>Teeth</span></div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c2i3.jfif" alt="">
+                              <div><span>Mental, Emotional or Behavioral Disorders</span></div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c2i4.jfif" alt="">
+                              <div><span>Child</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c2i5.jfif" alt="">
+                              <div><span>Brain & Nerves</span></div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c2i6.jfif" alt="">
+                              <div><span>Bones</span></div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c2i7.jfif" alt="">
+                              <div><span>Gynaecology and Infertility</span></div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="pic-holder">
+                              <img src="/images/c2i8.jfif" alt="">
+                              <div><span>Ear, Nose and Throat</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even-block">
+            <div class="app container">
+              <div class="icon-boxes">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img src="/images/one.svg">
+                    <span>All your healthcare needs</span>
+                    <span class="icon-boxes-span">Search and book a clinic visit, home visit, or a teleconsultation. Order your medicine and book a service or operation.</span>
+                  </div>
+                  <div class="col-lg-3">
+                    <img src="/images/two.svg">
+                    <span>Verified patient reviews</span>
+                    <span class="icon-boxes-span">Doctor ratings are from patients who booked and visited the doctor through Vezeeta.</span>
+                  </div>
+                  <div class="col-lg-3">
+                    <img src="/images/three.svg">
+                    <span>Your booking is confirmed</span>
+                    <span class="icon-boxes-span">Your booking is automatically confirmed, as the doctor specifies his working hours and is notified of the booking details.</span>
+                  </div>
+                  <div class="col-lg-3">
+                    <img src="/images/four.svg">
+                    <span>Book for free, and pay in the clinic</span>
+                    <span class="icon-boxes-span">The consultation fees stated on Vezeeta are the actual doctor's fees with no extra charges.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="application">
+                <div class="application-container">
+                  <div class="mobile-img">
+                    <img src="/images/mobile.jfif" alt="">
+                  </div>
+                  <div class="application-text">
+                    <h1>Download the Application</h1>
+                    <p>Compare, choose, and book. Track your appointments with ease, rate your doctor's visit, and order your medicine online.</p>
+                    <a href="" class="custom-anchor"> <img src="/images/play-store.svg" alt="play store logo"> Google play</a>
+                    <a href="" class="custom-anchor"> <img src="/images/app-store.svg" alt="app store logo"> App store</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="odd-block">
+            <div class="container">
+              <div class="tops">
+                <div class="row">
+                  <div class="col-md-6">
+                    <span>Choose and book from top specialties</span>
+                    <div class="tags">
+                      <a href="" class="tag">Dermatologist</a>
+                      <a href="" class="tag">Dentist</a>
+                      <a href="" class="tag">Psychiatrist</a>
+                      <a href="" class="tag">Pediatrician</a>
+                      <a href="" class="tag">Neurologist</a>
+                      <a href="" class="tag">Orthopedist</a>
+                      <a href="" class="tag">Gynecologist</a>
+                      <a href="" class="tag">ENT Doctor</a>
+                      <a href="" class="tag">Cardiologist</a>
+                      <a href="" class="tag">View More ...</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <span>Choose and book from top cities</span>
+                    <div class="tags">
+                      <a href="" class="tag">Cairo</a>
+                      <a href="" class="tag">Giza</a>
+                      <a href="" class="tag">Alexandria</a>
+                      <a href="" class="tag">North Coast</a>
+                      <a href="" class="tag">Qalyubia</a>
+                      <a href="" class="tag">Gharbia</a>
+                      <a href="" class="tag">Menoufia</a>
+                      <a href="" class="tag">Fayoum</a>
+                      <a href="" class="tag">El-Dakahlia</a>
+                      <a href="" class="tag">View More ...</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="widgets">
+            <div class="widget widget-1">
+              <ul>
+              <img src="/images/footer.jfif" alt="">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Team</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Press</a></li>
+            </ul>
+            </div>
+            <div class="widget widget-2">
+              <ul>
+              <p>Search By</p>
+              <li><a href="">specialty</a></li>
+              <li><a href="">Area</a></li>
+              <li><a href="">Insurance</a></li>
+              <li><a href="">Hospital</a></li>
+              <li><a href="">Center</a></li>
+            </ul>
+            </div>
+            <div class="widget widget-3">
+              <ul>
+              <p>Are You A Doctor ?</p>
+              <li><a href="">Join vezeeta doctors</a></li>
+            </ul>
+            </div>
+            <div class="widget widget-4">
+              <ul>
+              <p>Need Help?</p>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Terms Of Use</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Doctors Privacy Policy</a></li>
+            </ul>
+            </div>
+            <div class="widget widget-5">
+              <ul>
+                <img src="/images/google.jfif" alt="">
+              </ul>
+              <ul>
+                <img src="/images/apple.jfif" alt="">
+              </ul>
+              <div class="social-media">
+                <span>
+                  <a href="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
+    
+ 
